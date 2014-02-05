@@ -18,7 +18,7 @@
 
 case node['platform']
 when "ubuntu"
-  if node['platform_version'].to_f < 12.04
+  if node['platform_version'].to_f < 13.10 # This lets us ensure we get 1.2.4
 
     include_recipe "apt"
 

@@ -1,7 +1,8 @@
 default['mosh']['install_type'] = "package"
-default['mosh']['version'] = "1.1.3"
-default['mosh']['source_url'] = "https://github.com/downloads/keithw/mosh/mosh-#{node['mosh']['version']}.tar.gz"
-default['mosh']['source_checksum'] = "53234667e53625791ca43ced1ec43834cbd86a019c67ce5e4bd65556113c6eee"
+default['mosh']['version'] = "1.2.4"
+default['mosh']['source_url'] = "http://mosh.mit.edu/mosh-#{node['mosh']['version']}.tar.gz"
+#default['mosh']['source_url'] = "https://github.com/downloads/keithw/mosh/mosh-#{node['mosh']['version']}.tar.gz" # Github alternate download
+default['mosh']['source_checksum'] = "e74d0d323226046e402dd469a176075fc2013b69b0e67cea49762c957175df46"
 default['mosh']['configure_flags'] = []
 default['mosh']['source_depends'] = case node['platform']
                                     when 'ubuntu', 'debian'
